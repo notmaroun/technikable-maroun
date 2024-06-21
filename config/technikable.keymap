@@ -23,9 +23,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        tri_layer {
-            if-layers = <NAV_L NUM_L>;
-            then-layer = <SYM_L>;
+        Layer3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -52,7 +52,7 @@
             >;
         };
 
-        num_layer {
+        symbols {
             label = "Num";
             bindings = <
 &kp TILDE   &kp EQUAL  &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS          &trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp PIPE
